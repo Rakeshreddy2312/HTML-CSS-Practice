@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="submitform()">
+    <input type="text" id="username" placeholder="username"/>
+    <input type="password" id="password" placeholder="password"/>
+    <button >submit</button>
+    </form>
+    <script>
+        function submitform(){
+            event.preventDefault()
+            //alert()
+            let usrnm = document.getElementById("username").value;
+            let pswd = document.getElementById("password").value;
+            console.log(usrnm);
+            console.log(pswd);
+        
+     }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: black;
+            width: 100%;
+            height: 200px;
+        }
+        .line{
+            border-bottom: 5px dashed rgb(205, 25, 25);
+            padding-top:100px;
+        }
+        .line img{
+            width:100px;
+            height: 100px;
+        }
+        .fa{
+            color: #fff;
+            font-size: 20px;
+            animation-name: car;
+            animation-duration: 20s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes car{
+             0%{
+                transform: translate(0px,0px);
+            }
+            25%{
+                transform: translate(1500px,0px);
+            }
+            50%{
+                transform: translate(1500px,80px);
+            }
+            75%{
+                transform: translate(0px,80px);
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+        } 
+        /* from{
+            transform: translate(0px,0px);
+        }
+        to{
+            transform: translate(100px,100px);
+        } */
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line">
+            <i class="fa fa-automobile"></i>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

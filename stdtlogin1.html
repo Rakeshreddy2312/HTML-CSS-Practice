@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background:url(images/sea.jpg);
+            color: aliceblue;
+        }
+        h2{
+            text-align:center;
+        }
+        
+    </style>
+</head>
+<body  >
+    <form action="">
+        <h2>login page</h2>
+        <table align="center" cellpadding="10" >
+            <!------------------------name of a student------------------------------------>
+            <tr>
+                <td><label for="fstnm">firstname*</td>
+                <td><input type="text" size="30" name="fstnm" placeholder="enter first name" required>(30 characters only)</td></label>
+            </tr>
+            <tr>
+                <td>lastname*</td>
+                <td><input type="text" size="30" placeholder="enter last name" required>(30 characters only)</td>
+            </tr>
+            <!------------------------DOB of a student------------------------------------>
+            <tr>
+                <td>date of Birth*</td>
+                <td><input type="date" name="date" id="date" required></td>
+            </tr>
+            <!------------------------mail of a student------------------------------------>
+            <tr>
+                <td>email id</td>
+                <td><input type="email" name="mail" id="mail" size="30" placeholder="abc@xyz.com"></td>
+            </tr>
+            <!------------------------mobile num of a student------------------------------------>
+            <tr>
+                <td>mobile number*</td>
+                <td><input type="tel" name="mobilenum" id="mobilenum" size="10" placeholder="94xxxxxxxx" maxlength="10" required>(10 numbers only)</td>
+            </tr>
+            <!------------------------gender of a student------------------------------------>
+            <tr>
+                <td>gender*</td>
+                <td><input type="radio" name="gender" id="gender" required>Male
+                    <input type="radio" name="gender" id="gender"required>female
+                    <input type="radio" name="gender" id="gender">other</td>
+            </tr>
+            <!------------------------address of a student------------------------------------>
+            <tr>
+                <td>address</td>
+                <td><textarea name="address" id="add" cols="50" rows="5"></textarea></td>
+            </tr>
+            <!------------------------city of a student------------------------------------>
+            <tr>
+                <td>city</td>
+                <td><select name="city" id="city">
+                        <option value="-1">--please select city--</option>
+                        <option value="1">hyderabad</option>
+                        <option value="2">warangal</option>
+                        <option value="3">bangalore</option>
+                        <option value="4">mumbai</option>
+                    </select> </td>
+            </tr>
+            <!------------------------state of a student------------------------------------>
+            <tr>
+                <td>state</td>
+                <td><select name="state" id="state">
+                    <option value="-1">--please select sate--</option>
+                    <option value="1">telangana</option>
+                    <option value="2">karnataka</option>
+                    <option value="3">maharastra</option>
+                </select></td>
+            </tr>
+            <!------------------------country of a student------------------------------------>
+            <tr>
+                <td>Country</td>
+                <td><input type="text" name="cntry" value="india" readonly title="country"></td>
+            </tr>
+            <!------------------------hobbies of a student------------------------------------>
+            <tr>
+                <td>hobbies</td>
+                <td><input type="checkbox" name="hobbies1" id="hobbies">reading
+                    <input type="checkbox" name="hobbies2" id="hobbies">listening songs
+                    <input type="checkbox" name="hobbies3" id="hobbies">playing games
+                    <input type="checkbox" name="hobbies" id="other">others <input type="text"></td>
+            </tr>
+            <!------------------------qualification------------------------------------>
+            <tr>
+                <td>qualification</td>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>s.no</th>
+                                <th>examination</th>
+                                <th>board</th>
+                                <th>marks in percentage(%)</th>
+                                <th>year of passing</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>class X</td>
+                                <td><input type="text"></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>class XII</td>
+                                <td><input type="text"></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>graduation</td>
+                                <td><input type="text"></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <br>
+            <!------------------------course------------------------------------>
+            <tr>
+                <td>applied for</td>
+                <td><input type="radio" name="course" id="course">M.TECH
+                <input type="radio" name="course" id="course">MBA
+                <input type="radio" name="course" id="course">MCA</td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="login" id="buttons" value="submit" align="center"></td>
+                <td><input type="reset"></td>
+            </tr>
+
+
+        </table>
+    </form>
+</body>
+</html>

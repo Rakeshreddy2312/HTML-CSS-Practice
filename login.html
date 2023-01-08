@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+   <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="lgin">
+        <h3>log in </h3>
+        <form action="" method="" onsubmit="submitForm()">
+           <div>
+                <label for="userid">username:<input type="text"  id="userid" name="usrnm" placeholder="enter username"   ></label>
+            </div><br>
+            <div>
+                 <label for="psword">password:<input type="password" id="psword" name="pswd" placeholder="enter password" ></label>
+            </div><br>
+            <div>
+                <!-- <input type="submit"  id="sbmt" name="submit" > -->
+                <button type="submit">submit</button>
+            </div><br>
+            
+         </form>
+    </div>
+    <script>
+       const submitForm=()=>{
+        event.preventDefault();
+        let usrnm=document.getElementById("userid").value;
+        let pswd=document.getElementById("psword").value;
+        console.log('username',usrnm,'password',pswd);
+        //console.log(pswd);
+       }
+    </script>
+</body>
+</html>

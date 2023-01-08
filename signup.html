@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>signup page</title>
+        <style>
+            button{
+                color: red;
+                background-color: blue;
+                border-radius: 20px;
+                padding: 10px 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!--thi is a form-->
+        <h3 style="text-align:center">signup page</h3><hr>
+        <!-- <form method=" get"> -->
+            <form method=" post">
+            <!-------------------name  of user--------------------------->
+            <div>
+                <label>firstname:</label> 
+                    <input type="text" name="fstnm" placeholder="enter your name" size="30" autofocuss>(30 charecters only)
+                   
+            </div><br>
+            <div>
+                <label>lastname: 
+                    <input type="text" name="lstnm" placeholder="enter last name" size="30"border="5px">(30 characters only)
+                </label>
+            </div><br>
+            <!-------------------password --------------------------->
+            <label>password:</label><input type="password">
+            
+             <label>select technology:
+                <select name="lang" id="">
+                    <OPtgroup label="SOFTWARE TECH">
+                    <option value="">--please select a option--</option>
+                    <option value="">front end dev</option>
+                    <option value="">back end dev</option>
+                    <option value="">dev ops</option>
+                    <option value="">testing</option>
+                    <option value="">cloud computing</option>
+                </OPtgroup>
+                </select>
+             </label><br><br>
+             <label for="">phone number:
+                <select>
+                    <option value="">+91</option>
+                    <option value="">+12</option>
+                    <option value="">+00</option>
+                    <option value="">+76</option>
+                </select>
+                <input type="tel" placeholder="0123456789" maxlength="10">
+            </label><br><br>
+            <label for="email">email id:<input type="email"></label>
+            <fieldset>
+                <legend>address</legend> 
+           <label for="address">address:<br><textarea name="" id="" cols="30" rows="10"></textarea></label></fieldset>
+           
+           <fieldset>
+                <legend>select gender</legend>
+                <input type="radio" name="gender" id="" checked><label for="gender"></label>male</label>
+               <input type="radio" name="gender" id=""> <label for="gender"></label>female</label>
+                <input type="radio" name="gender" id="" disabled><label for="gender"></label>other</label>
+           </fieldset>
+            <label>upload passport size photo: <input type="file"></label>
+            
+            <input type="submit" name="" id="">
+           <input type="reset">
+           <button>submit</button>
+
+
+        </form>        
+    </body>
+</html>
